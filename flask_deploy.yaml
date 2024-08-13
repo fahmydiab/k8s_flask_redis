@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: web-db-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+        - name: flask-app
+          image: tiangolo/uwsgi-nginx-flask:python3.8
+          ports:
+            - containerPort: 80
+          env:
+            - name: REDIS_HOST
+              value: "redis"
