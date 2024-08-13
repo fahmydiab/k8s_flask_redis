@@ -1,3 +1,5 @@
+<img width="883" alt="Screenshot 2024-08-13 at 6 24 57 PM" src="https://github.com/user-attachments/assets/9d18b5d0-1287-47b7-a925-62680df74a99">
+
 ## 1. Setup Overview
 Web Application: Python Flask App
 Database: Redis with persistent storage
