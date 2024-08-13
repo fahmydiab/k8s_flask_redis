@@ -45,5 +45,7 @@ Access the Flask Application:
 - "minikube service flask-service -n web-db-example"
 
 
+<img width="883" alt="Screenshot 2024-08-13 at 6 25 44 PM" src="https://github.com/user-attachments/assets/27fde3ec-7d70-480e-bc8a-f3cbd345db20">
+
 
 
