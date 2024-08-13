@@ -29,7 +29,19 @@ Expose both the Redis database and the Flask application via Kubernetes Services
 - Create a Service for Flask
 - Apply the Services:
 
-"kubectl apply -f redis-service.yaml
-kubectl apply -f flask-service.yaml"
+"- kubectl apply -f redis-service.yaml
+- kubectl apply -f flask-service.yaml"
+
+  ## 3. Validation
+Check that the Pods are Running:
+- kubectl get pods -n web-db-example
+Check the Services:
+kubectl get services -n web-db-example
+
+Access the Flask Application:
+
+- "minikube service flask-service -n web-db-example"
+
+
 
 
